@@ -45,7 +45,7 @@ This layered architecture ensures modularity, scalability, and AI explainability
 ## 📄 License
 
 This project is licensed under the **MIT License**.  
-See the [`LICENSE`](./License) file for more details.
+See the [`LICENSE`](./LICENSE) file for more details.
 
 ---
 
