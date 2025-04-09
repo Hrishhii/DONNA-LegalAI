@@ -1,24 +1,29 @@
-# 🚀 TALQS Impact Log – 09 April 2025
+# 🚀 DONNA Impact Log – 09 April 2025
 
 ## 🧠 Summary
-Laid out the initial architecture of TALQS (Transformer-based Architecture for Legal Question Answering & Summarization).
+Kicked off development of **DONNA** (Document-Oriented Neural Network Assistant), a GenAI project aimed at legal document summarization and question answering.  
+The underlying architecture is **TALQS** (Transformer-based Architecture for Legal Question Answering & Summarization).
 
 ## ✅ Progress
-- Finalized project name and core idea.
-- Broke down project into 2 modules:
+- Finalized project branding:  
+  - **Product Name:** DONNA  
+  - **Architecture Codename:** TALQS  
+- Broke project into 2 core modules:
   - Legal Summarization
   - Legal Question Answering
-- Discussed input-output flow and system pipeline.
-- Understood PDF parsing, chunking, and transformer-based summarization.
+- Mapped end-to-end input/output pipeline from PDF ingestion to final response.
+- Explored PDF parsing, chunking strategies, and transformer-based summarization.
 
 ## 🧰 Stack & Tools
-- Python, HuggingFace Transformers
-- PyMuPDF (PDF parser)
-- T5 / BART / LED for summarization
+- Python, Hugging Face Transformers
+- PyMuPDF for PDF parsing
+- T5 / BART / LongformerEncoderDecoder (LED) for summarization
+- GitHub for version control and documentation
 
 ## 🔥 Next Steps
-- Build PDF-to-text extraction module.
-- Implement chunking and begin testing with `t5-base`.
-- Prep summarizer model pipeline.
+- Begin building PDF-to-text extraction module
+- Implement document chunking and test with `t5-base`
+- Start setting up summarizer pipeline
 
-— Logged by Hrishikesh Raparthi
+> "If you're gonna do this, you better go all in. Like Donna would."  
+> — Logged by Hrishikesh Raparthi
