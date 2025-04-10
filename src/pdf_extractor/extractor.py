@@ -46,5 +46,5 @@ def main():
         print("[ERROR] Extraction failed.")
         
         
-
-main()
+if __name__ == "__main__":
+    main()
