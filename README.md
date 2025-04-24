@@ -37,7 +37,7 @@ This layered architecture ensures modularity, scalability, and AI explainability
 - **Backend:** Python, Hugging Face Transformers, PyMuPDF
 - **Frontend:** MERN Stack (Planned)
 - **AI Models:** T5 / BART / LED / LegalBERT (Summarization & QA)
-- **TTS:** Coqui TTS / gTTS (Planned, but not decided)
+- **TTS:** Coqui TTS / gTTS (Planned)
 - **Database:** MongoDB (Planned)
 
 ---
