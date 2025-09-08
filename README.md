@@ -72,7 +72,7 @@ DONNA is a step toward **domain-specific AI assistants** that move beyond genera
 
 ## License  
 
-Licensed under MIT. Open for research & collaboration.  
+This project is licensed under the [MIT License](LICENSE).  
 
 ---
 
