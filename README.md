@@ -2,7 +2,7 @@
 
 > *"AI is transforming industries - but law remains locked in complexity. DONNA aims to change that."*  
 
-**DONNA** (Domain-Oriented Neural Network Assistant) is a legal AI system designed to make legal documents and processes **accessible, understandable, and efficient**. It combines **state-of-the-art LLMs** with **intelligent retrieval pipelines** to assist lawyers, students, and citizens in navigating complex legal information.  
+**DONNA** (Document-Oriented Legal AI Assistant) is a legal AI system designed to make legal documents and processes **accessible, understandable, and efficient**. It combines **state-of-the-art LLMs** with **intelligent retrieval pipelines** to assist lawyers, students, and citizens in navigating complex legal information.  
 
 ---
 
@@ -17,8 +17,6 @@
 - **Automated Legal Summaries** - from lengthy judgments to concise insights.  
 - **Legal Q&A (Chat)** - ask a question, get a clear explanation in plain English.  
 - **Global Legal News Digest** - stay updated with trending global legal developments.  
-
-This makes DONNA not just an AI project - but a **step toward democratizing legal knowledge**.  
 
 ---
 
@@ -60,8 +58,8 @@ This makes DONNA not just an AI project - but a **step toward democratizing lega
 
 ## Research Basis  
 
-- *Attention Is All You Need* - Vaswani et al. (2017)  
-- *Retrieval-Augmented Generation for Knowledge-Intensive NLP* - Lewis et al. (2020)  
+- [*Attention Is All You Need* - Vaswani et al. (2017)](https://arxiv.org/abs/1706.03762)  
+- [*Retrieval-Augmented Generation for Knowledge-Intensive NLP* - Lewis et al. (2020)](https://arxiv.org/abs/2005.11401)  
 - Recent advancements in **domain-specific LLMs** & **efficient retrieval pipelines**  
 
 ---
