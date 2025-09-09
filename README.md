@@ -20,7 +20,7 @@
 
 ---
 
-## Highlights  
+## Features  
 
 - **Multi-LLM Architecture**  
   - *Groq Llama 3* for precision legal reasoning  
