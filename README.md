@@ -1,30 +1,22 @@
-# DONNA - Domain-Specific Legal AI Assistant  
+# DONNA - Domain-Specific Legal AI Assistant
 
-> *"AI is transforming industries - but law remains locked in complexity. DONNA aims to change that."*  
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)  
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)  
+![FastAPI](https://img.shields.io/badge/FastAPI-API%20Backend-teal.svg)  
+![React](https://img.shields.io/badge/React-Frontend-blue.svg)  
+![TailwindCSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC.svg)
 
-**DONNA** (Document-Oriented Legal AI Assistant) is a legal AI system designed to make legal documents and processes **accessible, understandable, and efficient**. It combines **state-of-the-art LLMs** with **intelligent retrieval pipelines** to assist lawyers, students, and citizens in navigating complex legal information.  
+> *"AI is transforming industries — but law remains locked in complexity. DONNA is built to change that."*
 
----
-
-## Why DONNA?  
-
-- Legal information is often **dense, inaccessible, and intimidating**.  
-- Most AI assistants are **general-purpose**, not optimized for law.  
-- Access to justice requires **simpler, transparent tools**.  
-
-**DONNA bridges this gap** by offering:  
-
-- **Automated Legal Summaries** - from lengthy judgments to concise insights.  
-- **Legal Q&A (Chat)** - ask a question, get a clear explanation in plain English.  
-- **Global Legal News Digest** - stay updated with trending global legal developments.  
+**DONNA** (Document-Oriented Legal AI Assistant) is a legal AI system designed to make legal documents and processes **accessible, understandable, and efficient**. It combines **state-of-the-art LLMs** with **intelligent retrieval pipelines** to assist lawyers, students, and citizens in navigating complex legal information. 
 
 ---
 
-## Features  
+## Features
 
 - **Multi-LLM Architecture**  
-  - *Groq Llama 3* for precision legal reasoning  
-  - *Google Gemini Flash* for structured summarization  
+  - **Groq Llama 3.1** for precision legal reasoning  
+  - **Google Gemini Flash** for structured summarization  
 - **RAG-Powered Pipeline**  
   - Smart chunking + semantic retrieval (Chroma + HuggingFace embeddings)  
 - **Human-Centered Design**  
@@ -36,6 +28,92 @@
 
 ---
 
+## Tech Stack
+
+- **Backend:** FastAPI + LangChain + ChromaDB + HuggingFace Embeddings
+- **LLMs:** Groq Llama 3.1 (Q&A), Gemini 2.0 Flash (Summarization)
+- **Frontend:** React.js + TailwindCSS
+- **OCR/Parsing:** PyPDF2, pdf2image, pytesseract
+
+---
+
+## Installation & Setup
+
+### Prerequisites
+
+- Python **3.10+**
+- Node.js **18+**
+- [Tesseract OCR](https://tesseract-ocr.github.io/tessdoc/) installed on your system
+- [Poppler](https://poppler.freedesktop.org/) (required for `pdf2image`)
+- API Keys for:
+  - [Groq](https://console.groq.com/)
+  - [Google Gemini](https://aistudio.google.com/)
+  - [News API](https://newsapi.org/)
+
+---
+
+### Environment Variables
+#### 1. Copy the template file:
+
+```bash
+cp .env.example .env
+```
+#### 2. Replace the placeholder values in `.env` with your actual API keys:
+
+```bash
+# .env
+GROQ_API_KEY="your_real_groq_api_key"
+GEMINI_API_KEY="your_real_gemini_api_key"
+NEWS_API_KEY="your_real_news_api_key"
+```
+⚠️ Do not commit your `.env` file to GitHub, it is already ignored in `.gitignore`.
+
+Make sure to setup backend and frontend in different terminals.
+(*use cmd, not powershell*)
+#### 3. Backend Setup
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+```
+
+#### 4. Frontend Setup 
+```bash
+cd frontend
+npm install
+npm start
+```
+---
+## Project structure
+```bash
+DONNA-LegalAI/
+├── .env              # API keys (not committed, you will be creating this file.)
+├── .env.example      # Example template for ".env"
+├── .gitignore        # Ignore env
+├── LICENSE           # MIT License
+├── README.md         # Project documentation
+├── backend/          # Python FastAPI backend
+│   ├── main.py
+│   └── src/
+│       ├── __init__.py
+│       ├── pdf_handler.py
+│       ├── summarization_model.py
+│       ├── qa_model.py
+│       └── news_fetcher.py
+└── frontend/         # React frontend
+    ├── package.json
+    ├── public/
+    │   └──index.html
+    └── src/
+        ├── App.css
+        ├── App.js
+        ├── index.css
+        ├── index.js
+        ├──LandingPage.css
+        └──LandingPage.js
+```
+---
+
 ## Example Use Cases  
 
 - **Law Students**: Quickly summarize 200-page case law before class.  
@@ -44,18 +122,6 @@
 - **Citizens**: Understand your rights without needing to parse jargon.  
 
 ---
-
-## Technical Design  
-
-- **Core Logic**: Python + LangChain  
-- **Models**: Groq Llama 3 (Q&A), Gemini Flash (Summarization)  
-- **Database**: ChromaDB (embedding storage & retrieval)  
-- **Frontend (planned)**: React + Tailwind (modern, minimal UI)  
-- **API Layer (planned)**: FastAPI (for scalability + integrations)  
-- **Cache**: Session-based (temporary) + optional MongoDB (persistent)  
-
----
-
 ## Research Basis  
 
 - [*Attention Is All You Need* - Vaswani et al. (2017)](https://arxiv.org/abs/1706.03762)  
@@ -64,15 +130,12 @@
 
 ---
 
-## Vision  
-
-DONNA is a step toward **domain-specific AI assistants** that move beyond general-purpose chatbots. By focusing on law - an area deeply tied to fairness, justice, and society - DONNA demonstrates how **AI can reduce barriers, empower citizens, and transform industries**.  
-
----
-
 ## License  
 
 This project is licensed under the [MIT License](LICENSE).  
 
 ---
+## Authors
+
+- [@Hrishhii](https://www.github.com/Hrishhii)
 
